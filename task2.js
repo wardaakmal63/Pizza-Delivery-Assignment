@@ -25,10 +25,8 @@ const updateWallet = async () => {
         console.log("Customer is updating wallet");
     }, 2000);
 };
-// Define the main function for pizza delivery, using async/await and try/catch/finally
 const pizzadelivery = async () => {
     try {
-        // Await each step of the pizza delivery process
         await reDefine();
         await order();
         await payment();
@@ -39,12 +37,10 @@ const pizzadelivery = async () => {
         console.log("Error:", error);
     }
     finally {
-        // Finally block to execute after the entire process, with a delay
         setTimeout(() => {
             console.log("Finally");
         }, 5000);
     }
 };
-// Call the main pizza delivery function
 pizzadelivery();
 export {};
